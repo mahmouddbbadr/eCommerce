@@ -18,7 +18,7 @@ loginForm.addEventListener("submit", function(event) {
 
     if (foundUser) {
         sessionStorage.setItem("currentUser", JSON.stringify(foundUser));
-        location.href = "home.html";
+        location.href = "index.html";
     } else {
         alert("Invalid email or password");
     }
