@@ -3,14 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="icon" type="image/png" href="./images/logo-s.png" />
-
+    <link rel="icon" type="image/png" href="/images/logo-s.png" />
     <title>Badr Store | Online Shopping</title>
     <!-- <link rel="icon" type="image/png" href="./images/logo1.png" /> -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/all.min.css" />
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,12 +20,12 @@
     <!-- start navbar -->
     <nav>
       <div class="logo">
-        <a href="home.html"><img src="../images/logo.png" alt="" /></a>
+        <a href="home.html"><img src="/images/logo.png" alt="" /></a>
       </div>
       <ul>
-        <li class="nav-active"><a href="home.html">Home</a></li>
-        <li><a href="#categories">Categories</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="home.html#categories">Categories</a></li>
+        <li class="nav-active"><a href="contact.html">Contact</a></li>
         <li><a href="about.html">About</a></li>
         <li><button id="logoutBtn" type="button" class="btn btn-danger">Logout</button></li>
       </ul>
@@ -38,39 +36,48 @@
         <div class="menu-bar"><i class="fa-solid fa-bars"></i></div>
       </div>
     </nav>
+    <div class="toast-box">
+      <!-- <div>Prodct added successfully</div> -->
+    </div>
     <!-- end navbar -->
 
-    <!-- start product  -->
     <div class="container">
-      <div class="details-card-conteiner"></div>
-      <div class="row" id="prod-details-card">
-        <div id="details-prod-img" class="col-lg-6 mb-4 mb-lg-0">
-          <img alt="" />
-        </div>
-        <div id="prod-details" class="col-lg-6">
-          <p class="prod-title"></p>
-          <span id="prod-category"></span>
-          <div class="rating"></div>
-
-          <p id="prod-description"></p>
-          <span class="prod-price"></span>
-          <div id="free-shipping">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span>Free Shipping Available</span>
-          </div>
-          <button class="add-to-cart"></button>
-        </div>
+      <div class="head">
+        <h2>Feel free to Contact Us 💕</h2>
+        <button id="about-share-btn">
+          Share <i class="fa-solid fa-share"></i>
+        </button>
       </div>
-    </div>
-    <!-- end product  -->
+      <form class="contact-form" action="#">
+        <div class="names">
+          <div class="firstname">
+            <input placeholder="First Name" type="text" />
+            <p class="error"></p>
+          </div>
+          <div class="lastname">
+            <input placeholder="Last Name" type="text" />
+            <p class="error"></p>
+          </div>
+        </div>
+        <div class="email">
+          <input ]placeholder="Enter Your Email" type="text" />
+          <p class="error"></p>
+        </div>
 
-    <!-- start similar -->
-    <div id="similar-products" class="container">
-      <h2 id="similar-title">Explore Similar Products in <span></span> ✨</h2>
-      <div class="products"></div>
-    </div>
-    <!-- end similar -->
+        <div class="message">
+          <textarea
+            placeholder="Enter Your Message"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <p class="error"></p>
+        </div>
 
+        <input value="Submit Message" type="submit" />
+      </form>
+    </div>
     <!-- start footer  -->
     <footer
       class="container-fluid footer d-flex justify-content-center align-items-center"
@@ -104,12 +111,11 @@
     </footer>
     <!-- end footer  -->
     <!-- -------scripts--------- -->
-     <script src="../js/auth.js"></script>
-    <script src="../js/bootstrap.bundle.js"></script>
-    <script src="../js/all.js"></script>
-    <!-- <script src="./js/all.min.js"></script> -->
-    <script type="module" src="../js/prod-details.js"></script>
-    <!-- <script type="module" src="./js/main.js"></script> -->
+     <script src="/js/auth.js"></script>
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/all.js"></script>
+    <script type="module" src="/js/global.js"></script>
+    <script type="module" src="/js/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
